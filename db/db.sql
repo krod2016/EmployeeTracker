@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS museum;
+CREATE DATABASE museum;
+USE museum;
