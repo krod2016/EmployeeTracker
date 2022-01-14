@@ -1,26 +1,26 @@
-DROP TABLE IF EXISTS employee;
-DROP TABLE IF EXISTS role;
-DROP TABLE IF EXISTS department;
+DROP DATABASE IF EXISTS museum;
+CREATE DATABASE museum;
+USE museum;
 
 CREATE TABLE department (
-  id INT NOT NULL AUTO_INCREMENT,
-  name VARCHAR(45) NULL,
-  PRIMARY KEY (id)
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(45) NULL
 );
 
 CREATE TABLE role (
-  id INT NOT NULL AUTO_INCREMENT,
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(45) NULL,
   salary DECIMAL(10.3) NULL,
-  department_id INT NULL,
-  PRIMARY KEY (id)
-);
+  department_id INTEGER NOT NULL, 
+  CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE CASCADE
+  );
 
 CREATE TABLE employee (
-  id INT NOT NULL AUTO_INCREMENT,
+  employee_id INTEGER AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(45) NULL,
   last_name VARCHAR(45) NULL,
-  role_id INT NULL,
-  manager_id INT NULL,
-  PRIMARY KEY (id)
+  role_id INTEGER NULL,
+  CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE CASCADE,
+  manager_id INTEGER NULL,
+  CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employee(employee_id) ON DELETE SET NULL  
 );

@@ -18,9 +18,9 @@ VALUES
 ('Jacob', 'Jimenez', 2, null),
 ('John', 'Straham', 3, null),
 ('Terry', 'Jones', 4, null),
-('Kayle', 'Rodriguez', 1, 001),
-('Zayne', 'Johnson', 2, 002),
-('Grace', 'Ramos', 2, 002),
-('Amber', 'Ingram', 3, 003),
-('Matt', 'Westbrook', 3, 003),
-('Caroline', 'Long', 4, 004);
+('Kayle', 'Rodriguez', 1, 1),
+('Zayne', 'Johnson', 2, 2),
+('Grace', 'Ramos', 2, 2),
+('Amber', 'Ingram', 3, 3),
+('Matt', 'Westbrook', 3, 3),
+('Caroline', 'Long', 4, 4);
