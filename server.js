@@ -4,7 +4,7 @@ const db = require('./db/connection');
 // Connect to database
 db.connect(err => {
   if (err) {
-      throw error
+    throw err
   }
   promptUser();
 });
