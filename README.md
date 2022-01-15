@@ -2,7 +2,7 @@
 A convienent way for managers to organize their employees.
 
 # Links
-* GitHub:
+* GitHub: https://github.com/krod2016/EmployeeTracker
 * Video walk-through: 
 
 # Description
