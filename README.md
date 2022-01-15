@@ -6,8 +6,8 @@ A convienent way for managers to organize their employees.
 * Video walk-through: 
 
 # Description
--insert screenshot here-
-Here is a snapshot of the project in action. 
+![image](https://user-images.githubusercontent.com/88009884/149633778-ef7039da-9144-40b0-bfe1-f6e3776c1225.png)
+Here is a snapshot of the table of contents. This allows managers to choose the option of their liking.
 
 # Technologies Used
 * Inquirer
